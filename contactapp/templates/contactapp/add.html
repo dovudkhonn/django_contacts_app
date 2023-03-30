@@ -1,0 +1,44 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Add Contact</title>
+    <style>
+
+    </style>
+</head>
+<body class="p-3">
+    <form action="" method="post" class="form-group">
+        {% csrf_token %}
+        <a href="/" style="color: blue;">browse contacts?</a> <br><br>
+        {{form}}
+        <button type="submit" name="save" class="btn btn-success mt-3">Create New</button>
+        
+        {% if error %}
+            <p class="mt-3">{{ error }}</p>
+        {% endif %}
+    </form>
+        
+       
+       
+        
+        
+       
+       
+       
+       
+       
+        <!-- <label for="fullname">Full Name</label>
+        <input id="fullname" type="text" name="fullname" value="test" class="form-control">
+        <br>
+        <label for="email">Phone Number</label>
+        <input id="email" type="number" name="email" value="" class="form-control">   
+        <br>
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email" value="someone@blabla.com" class="form-control">   
+        <br>
+        <label for="relation">Relationship</label>
+        <input id="relation" type="text" name="relation" value="friend" class="form-control">   
+        
+        <button type="submit" class="btn btn-primary mt-4">Register</button> -->
+</body>
+</html>
